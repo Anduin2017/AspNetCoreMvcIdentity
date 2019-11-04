@@ -94,10 +94,9 @@ namespace AspNetCoreMvcIdentity
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseRouting();
             app.UseEndpoints(t => t.MapDefaultControllerRoute());
         }
     }
